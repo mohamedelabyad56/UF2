@@ -38,12 +38,12 @@ public class predeccionP {
 
     public int edad() {
         int age = 0;
-        boolean validInput = false;
-        while (!validInput) {
+        boolean valid = false;
+        while (!valid) {
             try {
                 System.out.print("Cuantos años tienes?: ");
                 age = Integer.parseInt(teclado.nextLine());
-                validInput = true;
+                valid = true;
             } catch (NumberFormatException e) {
                 System.out.println("Por favor, introduce un numero valido.");
             }
